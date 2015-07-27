@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="sGebruiker" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Gebruiker</Value>
+    </Setting>
+    <Setting Name="sBeheerder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Beheerder</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

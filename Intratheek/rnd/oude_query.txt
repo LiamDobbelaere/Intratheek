@@ -1,0 +1,10 @@
+boeken.aspx
+
+SELECT        (SELECT        TOP (1) BoekNummer
+                          FROM            tblBibliotheek
+                          WHERE        (ISBN = tblBoeken.ISBN)) AS BoekNummer, tblBoeken.ISBN, tblBoeken.Titel, dbo.GetBookAuthors(tblBoeken.ISBN) AS Auteurs, tblBoeken.Uitgeverij, 
+                         tblBoeken.Bladzijden, COUNT(tblBibliotheek_1.BoekNummer) AS Exemplaren, tblBoeken.Flaptekst, dbo.GetBookGenres(tblBoeken.ISBN) AS Tags
+FROM            tblBibliotheek AS tblBibliotheek_1 INNER JOIN
+                         tblBoeken ON tblBibliotheek_1.ISBN = tblBoeken.ISBN
+GROUP BY tblBoeken.ISBN, tblBoeken.Titel, tblBoeken.Uitgeverij, tblBoeken.Bladzijden, tblBoeken.Flaptekst
+ORDER BY tblBoeken.Titel

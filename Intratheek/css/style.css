@@ -1,0 +1,544 @@
+body, html  {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana;
+	font-size: 1em;
+	background-color: #FAFAFA;
+}
+
+::selection {
+    background-color: #990000;
+    color: white;
+}
+
+#container {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#navbar {
+	background-color: #F0F0F0;
+	text-align: center;
+	height: 70px;
+	max-width: 1000px;
+	margin: 0px auto;
+    margin-top: -18px;
+	-webkit-box-shadow: 0px 5px 20px 0px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    0px 5px 20px 0px rgba(50, 50, 50, 0.3);
+	box-shadow:         0px 5px 20px 0px rgba(50, 50, 50, 0.3);
+}
+
+#logo {
+	padding-left: 10px;
+	float: left;
+	height: 70px;
+	width: 125px;
+	line-height: auto;
+	position: relative;
+}
+
+#logo img {
+	transition: box-shadow 0.5s ease;
+	transition: -moz-box-shadow 0.5s ease;
+	transition: -webkit-box-shadow 0.5s ease;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+}
+
+/*
+#signin {
+	display: inline-block;
+	//float: right;
+	background-color: #990000;
+	width: auto;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	//position: relative;
+	//bottom: 50%;
+	//right: 16px;
+	color: white;
+	height: 32px;
+	padding: 10px 10px 0px 10px;
+	-webkit-border-radius: 0px 0px 16px 16px;
+	-moz-border-radius: 0px 0px 16px 16px;
+	border-radius: 0px 0px 16px 16px;
+	-webkit-box-shadow: 0px 5px 20px 0px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    0px 5px 20px 0px rgba(50, 50, 50, 0.3);
+	box-shadow:         0px 5px 20px 0px rgba(50, 50, 50, 0.3);
+}
+    */
+
+table.BoekenLijst {    margin-right: 0px;
+}
+
+.boeknr {
+    width: 24px;
+}
+
+.boeknr span {
+    background-color: #990000;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    -webkit-border-radius: 12px 12px 12px 12px;
+	-moz-border-radius: 12px 12px 12px 12px;
+	border-radius: 12px 12px 12px 12px;
+}
+
+/*.pagerStyle span {
+    background-color: #990000;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    -webkit-border-radius: 999px 999px 999px 999px;
+	-moz-border-radius: 999px 999px 999px 999px;
+	border-radius: 999px 999px 999px 999px;
+}*/
+
+.pagerStyle span, .pagerStyle a {
+    background-color: #CDCDCD;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    -webkit-border-radius: 999px 999px 999px 999px;
+	-moz-border-radius: 999px 999px 999px 999px;
+	border-radius: 999px 999px 999px 999px;
+}
+
+.pagerStyle span {
+    background-color: #990000;
+    color: white;
+}
+
+.pagerStyle a:hover {
+    background-color: #ABABAB;
+}
+
+.pagerStyle {
+    padding: 5px;
+}
+
+.detailBook {
+    margin-left: 0px;
+    margin-right: 32px;
+}
+
+.lenenKnop, .verlengKnop {
+    background-color: #990000;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.lenenKnop:hover, .verlengKop:hover {
+    background-color: #770000;
+    cursor: pointer;   
+}
+
+.verlengKnop {
+    background-color: white;
+    color: #990000;
+    border: 2px solid #990000;
+}
+
+.verlengKnop:hover {
+    background-color: #990000;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.hyperkaart {
+    color: black;
+}
+
+a.leenlijst {
+    width: 42px;
+    height: 42px;
+    background-color: #990000;
+    display: inline-block;
+    float: right;
+    margin-bottom: 32px;
+}
+
+#genrelijst {
+    display: inline-block;
+    padding-top: 5px;
+    text-align: left;
+}
+
+.leenhead, .bkhead {
+    background-color: #808080;
+    color: white;
+}
+
+.leenhead a {
+    color: white;
+}
+
+.selectedrow {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.bkhead {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.hideme {
+    background-color: #FAFAFA;
+    border: none;
+}
+
+#floatright {
+    float: right;
+}
+
+/*a.genre {
+    background-color: #990000;
+    color: white;
+    padding: 6px;
+    margin: 2px;
+    font-size: 13px;
+    line-height: 34px;
+    text-decoration: none;
+    -webkit-border-radius: 999px 999px 999px 999px;
+	-moz-border-radius: 999px 999px 999px 999px;
+	border-radius: 999px 999px 999px 999px;
+}*/
+
+a.genre {
+    /*color: #742525;*/
+    font-size: 11pt;
+    color: #555555;
+}
+
+#detailsA {
+    float: left;
+    margin-right: 32px;
+    display: inline-block;
+    background-color: #EBEBEB;
+    width: 40%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#detailsB {
+    width: 54%;
+    display: inline-block;
+}
+
+/*a.genre:hover {
+    background-color: #550000;
+}*/
+
+#signin, #leenlijst, #leenlijst_uit {
+	display: inline-block;
+    float: right;
+	width: auto;
+	text-align: right;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	/*position: relative;*/
+	/*bottom: 50%;*/
+	/*right: 16px;*/
+	color: #990000;
+	height: 32px;
+	padding: 10px 0px 0px 0px;
+}
+
+#signin {
+    width: 100%;
+}
+
+/*a.info {
+    outline:none; 
+}
+
+a.info strong {
+    line-height:30px;
+}
+
+a.info:hover {
+    text-decoration:none;
+}
+
+a.info span {
+    z-index:10;
+    display:none; 
+    padding:14px 20px;
+    margin-top: 42px; 
+    margin-left:-200px;
+    width: 200px; 
+    line-height:16px;
+    text-align: left;
+}
+
+a.info:hover span{
+    display:inline; 
+    position:absolute; 
+    color: white;
+    background-color: #990000;
+}*/
+ 
+#leenlijst, #leenlijst_uit {
+    line-height: 0px;
+    margin-top: 0px;
+    width: 42px;
+    height: 42px;
+    padding: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+    background-color: #990000;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#leenlijst_uit {
+    background-color: #555555;
+}
+
+#leennummer {
+    position: absolute;
+    padding-left: 14px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+#signin a {
+	color: #990000;
+}
+
+/*
+#signin:hover {
+	background-color: #770000;
+}*/
+
+*/
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	white-space: nowrap;
+}
+
+#navbar li {
+	display: inline-block;
+}
+
+#navbar li.snusk {
+    float: right;
+    margin-right: 10px;
+}
+
+#navbar a.navlinkL, a.navlinkR, a.navlinkLS, a.navlinkRS {
+	margin-top: 18px;
+    display: block;
+    width: 220px;
+	/*background-color: #999999;*/
+	background-color: #990000;
+    color: white;
+	text-align: center;
+    text-decoration: none;
+    /*margin-left: 5px;*/
+	height: 40px;
+	line-height: 40px;
+	/*border: 1px solid #999999;*/
+	border: 1px solid #990000;
+	font-size: 1.1em;
+}
+
+#navbar a.navlinkL, a.navlinkLS {
+	-webkit-border-radius: 16px 0px 0px 16px;
+	-moz-border-radius: 16px 0px 0px 16px;
+	border-radius: 16px 0px 0px 16px;
+}
+
+#navbar a.navlinkR, a.navlinkRS {
+	-webkit-border-radius: 0px 16px 16px 0px;
+	-moz-border-radius: 0px 16px 16px 0px;
+	border-radius: 0px 16px 16px 0px;
+}
+
+#navbar a.navlinkL:hover, a.navlinkR:hover, a.navlinkLS, a.navlinkRS {
+	/*color: #777777;*/
+	/*color: #990000;*/
+	/*background-color: #FCFCFC;*/
+	background-color: #770000;
+	/*border: 1px solid #777777;*/
+	border: 1px solid #990000;
+}
+
+#navbar #aangemeldals {
+	display: block;
+	width: auto;
+	text-align: center;
+	padding-left: 130px;
+	padding-top: 10px;
+	color: #555555;
+}
+
+#content {
+	text-align: center;
+	min-height: 100px;
+	padding: 30px;
+	padding-left: 164px;
+	margin: 0px auto;
+	max-width: 800px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin-top: 32px;
+	text-align: left;
+}
+
+#content h1 {
+	text-align: center;
+	/*border-bottom: 2px solid #999999;*/
+	border-bottom: 2px solid #990000;
+	/*color: #555555;*/
+	color: #990000;
+	padding-bottom: 16px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#searchpanel h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 16px;
+	/*border-bottom: 2px solid #999999;*/
+	/*color: #555555;*/
+	color: #990000;
+	padding-bottom: 8px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#searchpanel {
+    background-color: #F0F0F0;
+	border: 1px solid #770000;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 16px;
+    margin-bottom: 32px;
+	-webkit-box-shadow: 0px 5px 20px 0px rgba(50, 50, 50, 0.2);
+	-moz-box-shadow:    0px 5px 20px 0px rgba(50, 50, 50, 0.2);
+	box-shadow:         0px 5px 20px 0px rgba(50, 50, 50, 0.2);
+  	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+}
+
+.search {
+	transition: border 0.5s ease;
+	transition: -webkit-box-shadow 0.5s ease;
+	transition: -moz-box-shadow 0.5s ease;
+	transition: box-shadow 0.5s ease;
+	border: 2px solid #999999;
+    font-size: 12pt;
+	padding: 5px;
+}
+
+.search:focus {
+	transition: border 0.5s ease;
+	transition: -webkit-box-shadow 0.5s ease;
+	transition: -moz-box-shadow 0.5s ease;
+	transition: box-shadow 0.5s ease;
+	outline-width: 0;
+	border: 2px solid #990000;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(100, 0, 0, 0.8);
+	-moz-box-shadow:    0px 0px 10px 0px rgba(100, 0, 0, 0.8);
+	box-shadow:         0px 0px 10px 0px rgba(100, 0, 0, 0.8);
+}
+
+.searchbutton {
+	border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    color: white;
+	background-color: #990000;
+	padding: 6px;
+	width: 72px;
+    /*height: 40px;*/
+	font-size: 12pt;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+    background-image: url('../img/search.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 36px;
+    margin-top: 0px;
+}
+
+.searchbutton:hover {
+	background-color: #770000;
+	cursor: pointer;
+}
+
+.clearbutton {
+	color: white;
+	background-color: #990000;
+	border: none;
+	padding: 6px;
+    /*height: 40px;*/
+	font-size: 12pt;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+
+}
+
+.clearbutton:hover {
+	background-color: #770000;
+	cursor: pointer;
+}
+
+.combotaal {
+    padding: 2px;
+    font-size: 12pt;
+}
+
+#footer {
+	height: 20px;
+	width: auto;
+	color: #777777;
+	text-align: center;
+	margin-top: 16px;
+	margin-left: 124px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#exfloatleft {
+    display: inline-block;
+    float: left;
+    margin-right: 64px;
+}
+
+#exmiddle {
+    display: inline-block;
+}
